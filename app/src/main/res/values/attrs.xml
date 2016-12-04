@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="custom_enter_message">
+        <attr name="hint" format="string" />
+        <attr name="text" format="string" />
+        <attr name="is_show_content" format="boolean" />
+        <attr name="is_has_bottom" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="download_type">
+        <attr name="max_tips" format="string" />
+        <attr name="min_tips" format="string" />
+        <attr name="has_bottom" format="boolean" />
+    </declare-styleable>
+
+</resources>
