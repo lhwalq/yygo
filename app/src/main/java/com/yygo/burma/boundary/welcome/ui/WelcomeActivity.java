@@ -5,12 +5,8 @@ import android.view.KeyEvent;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.yygo.burma.app.AppConfig;
+import com.yygo.burma.R;
 import com.yygo.burma.base.activity.AppBaseCompatActivity;
-import com.yygo.burma.helper.UIHelper;
-import so.bubu.appointment.record.R;
-
-import com.yygo.lib.helper.DelayTaskHelper;
 import com.yygo.lib.wiget.DelayTask;
 
 public class WelcomeActivity extends AppBaseCompatActivity {
@@ -39,7 +35,7 @@ public class WelcomeActivity extends AppBaseCompatActivity {
      * 跳转
      */
     private void skipActivity() {
-        DelayTaskHelper.doDelayTask(AppConfig.APP_STAY, onDelayExecuteListener);
+//        DelayTaskHelper.doDelayTask(AppConfig.APP_STAY, onDelayExecuteListener);
     }
 
     private DelayTask.OnDelayExecuteListener onDelayExecuteListener = new DelayTask.OnDelayExecuteListener() {
@@ -51,11 +47,11 @@ public class WelcomeActivity extends AppBaseCompatActivity {
 
         @Override
         public void onPostExecute() {
-            if (AppConfig.isFirstOpenApp()) {
-                UIHelper.getInstance().goNaigationActivity(WelcomeActivity.this);
-            } else {
-                UIHelper.getInstance().goMainActivity(WelcomeActivity.this);
-            }
+//            if (AppConfig.isFirstOpenApp()) {
+//                UIHelper.getInstance().goNaigationActivity(WelcomeActivity.this);
+//            } else {
+//                UIHelper.getInstance().goMainActivity(WelcomeActivity.this);
+//            }
         }
     };
 

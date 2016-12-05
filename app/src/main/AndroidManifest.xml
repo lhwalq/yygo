@@ -14,10 +14,9 @@
     <uses-permission android:name="android.permission.WRITE_CALENDAR" />
 
     <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
-    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
-
+    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
     <application
-        android:name="com.yygo.burma.app.YygoApplication"
+        android:name=".app.YygoApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
@@ -44,7 +43,45 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity
+            android:name=".boundary.main.ui.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".boundary.setting.ui.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".boundary.user.ui.InformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".boundary.user.ui.AddressActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".boundary.user.ui.PersonActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".boundary.user.ui.ChangeNickActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".boundary.user.ui.RegistryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".boundary.user.ui.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".boundary.user.ui.RetrievePasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".boundary.user.ui.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".boundary.shopping.ui.WinnerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".boundary.shopping.ui.GoodDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".boundary.shopping.ui.OrdersActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
